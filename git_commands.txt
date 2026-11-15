@@ -1,0 +1,83 @@
+GIT COMMANDS USED IN THIS ASSIGNMENT
+(Keep only commands you personally run in your local terminal.)
+
+1. git --version
+Checks the installed Git version.
+
+2. git config --global user.name "Your Name"
+Sets the author name recorded in commits.
+
+3. git config --global user.email "you@example.com"
+Sets the author email recorded in commits.
+
+4. git clone https://github.com/a-h-a-r-i/GameVault.git
+Downloads the GitHub repository to the computer.
+
+5. cd GameVault
+Changes into the cloned project folder.
+
+6. git init
+Initializes a new local Git repository (only needed if you did not clone).
+
+7. git branch -M main
+Renames the current branch to main.
+
+8. git status
+Shows the current branch and working-tree changes.
+
+9. git add .
+Stages all new and modified files.
+
+10. git add index.html
+Stages only index.html.
+
+11. git add about.html
+Stages only about.html.
+
+12. git commit -m "Initial commit: add index.html and about.html"
+Creates a commit containing the two HTML pages.
+
+13. git commit -m "Update index.html with welcome text"
+Records the home-page welcome text change.
+
+14. git branch feature
+Creates a branch named feature.
+
+15. git checkout feature
+Switches to the feature branch.
+
+16. git checkout main
+Switches back to the main branch.
+
+17. git merge feature -m "Merge feature branch into main"
+Merges feature into the current branch (main).
+
+18. git log --oneline --graph --all
+Displays a compact graph of commits across all branches.
+
+19. cat .gitignore
+Displays the ignore rules (use Get-Content .gitignore in PowerShell).
+
+20. git commit -m "Add .gitignore for log files and temp folder"
+Commits the ignore rules.
+
+21. git revert HEAD --no-edit
+Reverses the latest commit with a new commit, preserving history.
+
+22. git remote -v
+Lists configured remote repositories.
+
+23. git remote add origin https://github.com/a-h-a-r-i/GameVault.git
+Connects the local repository to the GitHub remote (only if origin is not already configured).
+
+24. git push -u origin main
+Pushes main to GitHub and sets its upstream.
+
+25. git push origin feature
+Pushes the feature branch to GitHub.
+
+26. git add git_commands.txt
+Stages this command documentation file.
+
+27. git commit -m "Add git_commands.txt documentation"
+Commits the command documentation file.
